@@ -1,0 +1,377 @@
+
+	@font-face {
+  		font-family: pokemon;
+  		src: url(../font/pokemon.ttf);
+	}
+
+	body{
+		margin : 0;
+		font-family: 'pokemon';
+		font-weight:normal;
+		font-style:normal;
+		background-image: url('../images/bg.png');
+		background-repeat: repeat;
+		position: relative;
+		z-index: 0;
+		line-height: 200%;
+		font-size: 12px;
+	}
+
+
+
+	h1{
+		margin-top: 10px;
+		text-align: center;
+	}
+
+/*	p {
+		font-size: 14px;
+		padding: 50px;
+		width: 70%;
+
+	}*/
+
+	input {
+		cursor: pointer;
+	}
+
+h2, h4 {
+	/*margin-left: 15px;*/
+	margin:0px;
+}
+
+p{
+	margin: 0px;
+}
+
+
+.containerPokemon {
+	display: flex;
+	flex-direction: row;
+	/*justify-content: space-around;*/
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+
+.FlexRow {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 10px;
+	position: relative;
+	width: 100%;
+	flex-wrap: wrap;
+	
+
+}
+
+.FlexColumn {
+	display: flex;
+	flex-direction: column;
+	/*padding-left: 20px*/
+}
+
+.paddingLeft{
+	padding-left: 20px
+}
+
+.Desc {
+	width: 80%;
+	position: relative;
+}
+
+.FlexRow .Arrow1 {
+	width: 150px;
+}
+
+.FlexRow .NavPokemons{
+	align-items: center;
+	align-self: center;
+	width: 150px;
+}
+
+
+
+	.containerAscii{
+		width: 300px;
+		height: auto;
+		position: relative;
+		background-color: red;
+	}
+
+	.ascii{
+		font-size: 1vw;
+		line-height: 100%;
+
+	}
+
+	.container-principal{
+
+		height: auto;
+		position: relative;
+		width: 100%;
+		margin : 0;
+	}
+
+
+	.container{
+		padding: 100px;
+		z-index: 3;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		flex-wrap: wrap;
+		position: relative;	
+		height: 100%
+		margin : 0;
+		min-height: 100vh;
+	}
+
+
+
+	.liste{
+		flex-direction: row;
+		align-content: flex-start;
+		align-items: center;
+		align-content-content: center;
+		position: relative;
+
+	}	
+
+
+
+	.item{
+
+		background-color: white;
+		margin:10px;
+		border : dashed black;
+		padding: 10px;
+		position: relative;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		
+	}
+
+	.itemliste{cursor: pointer;}
+
+	form{
+		display:flex;
+		justify-content: center;
+		align-items: center;
+		/*cursor: pointer;*/
+		height: auto;
+	}
+
+	.imgpetit{
+		margin-left: 20px;
+		cursor: pointer;
+	}
+
+
+	.input1{
+		margin: 0px;
+		padding: 0px;
+		position: absolute;
+		left: 0px;
+		top:0px;
+		width: 100%;
+		height: 100%;
+		opacity: 0%;
+		cursor: pointer;
+		z-index: 2;
+
+	}
+
+
+	}
+
+	.bloc-rouge{ 
+		width: 150px;
+		height: 150px;
+		background-image: url("../images/main-sprites/yellow/1.png");
+		background-repeat: no-repeat;
+		
+	}
+		
+	.image-top{
+		width:100%;
+		height: 100px;
+		background-image: url('../images/top-bg.png');
+		background-repeat: repeat-x;
+		position: absolute;
+		top: 0px;
+		z-index: 2;
+	}
+
+	.image-left{
+		height: 100%;
+		width:100px;
+		background-image: url('../images/left-bg.png');
+		background-repeat: repeat-y;
+		position: absolute;
+		z-index: 1;
+		left: 0px;
+	}
+
+	.image-right{
+		height: 100%;
+		width:100%;
+		max-width: 100px;
+		background-image: url('../images/right-bg.png');
+		background-repeat: repeat-y;
+		position: absolute;
+		z-index: 1;
+		right: 0px;
+
+
+	}
+
+	.image-down{
+	    width: 100%;
+	    height: 100px;
+	    background-image: url(../images/down-bg.png);
+	    background-repeat: repeat-x;
+	    position: absolute;
+	    bottom: -100px;
+	    z-index: 2;
+	    background-position-y: bottom;
+
+	}
+
+	@media screen and (min-width: 200px) and (max-width: 640px) {
+  
+					.image-right{
+					height: 100%;
+					width:100%;
+					max-width: 50px;
+					background-image: url('../images/right-bg.png');
+					background-repeat: repeat-y;
+					position: absolute;
+					z-index: 1;
+					right: 0px;
+					background-size: contain;
+
+
+				}
+
+					.image-left{
+					height: 100%;
+					width:100px;
+					max-width: 50px;
+					background-image: url('../images/left-bg.png');
+					background-repeat: repeat-y;
+					position: absolute;
+					z-index: 1;
+					left: 0px;
+					background-size: contain;
+				}
+
+					.image-down{
+				    width: 100%;
+				    height: 100px;
+				    max-height: : 80px;
+				    background-image: url(../images/down-bg.png);
+				    background-repeat: repeat-x;
+				    position: absolute;
+				    bottom: -100px;
+				    z-index: 2;
+				    background-position-y: bottom;
+				    background-size: contain;
+
+				}
+
+					.image-top{
+					width:100%;
+					height: 100px;
+					max-height: : 80px;
+					background-image: url('../images/top-bg.png');
+					background-repeat: repeat-x;
+					position: absolute;
+					top: 0px;
+					z-index: 2;
+					 background-size: contain;
+				}
+
+					.container{
+					padding: 50px;
+				}
+
+
+
+}
+
+	.frame{
+	width: auto;
+	height:auto;
+	margin-top: 20px;
+	margin-bottom: 50px;
+	
+	background-image: url(../images/frame.png); 
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	align-content: center;
+	padding: 20px;
+	z-index: 4;
+	}
+
+.containerRow{
+
+	margin-top: 50px;
+	width:auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-content: space-around;
+	position: relative;
+}
+
+
+.imageDesc {
+
+	width:100%;
+	max-width: 450px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.imgDesc {
+	width: 100%;
+	max-width: 450px;
+}
+
+
+.containerArrow{
+	position: relative;
+	width: 50px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center; 
+	flex-direction: row-reverse;
+	align-content: center;
+	align-items: center;
+}
+
+.arrowLeft {
+width: 30px;
+height: auto;
+transform: rotate(-90deg);
+
+
+}
+
+.arrowRight {
+width: 30px;
+height: 30px;
+transform: rotate(90deg);
+
+
+
+}
+
+
+
